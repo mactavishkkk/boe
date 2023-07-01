@@ -1,8 +1,16 @@
+
+# BOE - Bemol Omnichannel Experience
+
+Um projeto que visa a união das interações de todo o corpo de clientes em uma só experiencia, seja ela iniciada, desenvolvida e finalizada seja em qualquer canal de interação.
+
+
+
+
 ## Rodando o projeto
 
 #### Nativo
 
-Certifique-se de possuir o PHP (Composer), nodejs(npm) e o driver de um banco de dados relacional
+Certifique-se de possuir o PHP >= 8.1, nodejs(npm) e o driver de um banco de dados relacional de sua escolha (_ele é apenas um detalhe_).
 
  1. Abra um terminal na pasta desejada e clone o projeto
 
@@ -17,7 +25,7 @@ composer install
 npm install
 ```
 
-3. Agora renomei o arquivo chamado `.env.example` em seu diretório para `.env` e o adapte para as configurações de seu banco de dados.
+3. Agora renomei o arquivo chamado `.env.example` em seu diretório para `.env`, adapte-o para as configurações de seu banco de dados caso necessário.
 
 4. Agora basta rodar as migrations junto de suas seeds e acessar http://localhost/
 
@@ -25,17 +33,11 @@ npm install
 php artisan mitrate:fresh --seed
 ```
 
-Obs: Caso sua pasta "storage" não venha com as devidas permissão dentro do container, digite:
-
-```bash
-./vendor/bin/sail chmod -R gu+w storage
-./vendor/bin/sail chmod -R guo+w storage
-./vendor/bin/sail php artisan cache:clear
-```
-
-Obs: Você também pode abrir um terminal dentro do container, para evitar esse repetitivo "./vendor/bin/sail {comand}" dessa forma: `docker exec -it container.id' bash` descubra o id do container com `docker ps`
+_Insto criará toda a estrutura da base de dados e alguns registros para você se sentir livre a testar!_
 
 #### Docker
+
+Para rodar o projeto em um container e dispensar a instalação de outras tecnologias, basta possuir em sua máquina o _Docker Desktop_ instalado e seguir por aqui:
 
  1. Abra um terminal na pasta desejada e clone o projeto
 
@@ -72,3 +74,10 @@ Obs: Caso sua pasta "storage" não venha com as devidas permissão dentro do con
 ```
 
 Obs: Você também pode abrir um terminal dentro do container, para evitar esse repetitivo "./vendor/bin/sail {comand}" dessa forma: `docker exec -it container.id' bash` descubra o id do container com `docker ps`
+## Stack's utilizada
+
+- Blade/breeze: "^1.21"
+- Tailwind: "^3.1"
+- Laravel: "^10.10"
+- PHP: "^8.1"
+- Docker Desktop: "^4.21"
