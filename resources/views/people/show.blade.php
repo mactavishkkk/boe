@@ -8,7 +8,7 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-between mb-4">
-                <a href="{{ route('people.index') }}" class="text-indigo-600 hover:text-indigo-900 font-bold py-2 px-4 rounded">
+                <a href="{{ route('client.index') }}" class="text-indigo-600 hover:text-indigo-900 font-bold py-2 px-4 rounded">
                     Voltar
                 </a>
             </div>

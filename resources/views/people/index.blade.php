@@ -8,7 +8,7 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-between mb-4">
-                <a href="{{ route('people.create') }}" class="text-indigo-600 hover:text-indigo-900 font-bold py-2 px-4 rounded">
+                <a href="{{ route('client.create') }}" class="text-indigo-600 hover:text-indigo-900 font-bold py-2 px-4 rounded">
                     Nova Pessoa
                 </a>
             </div>
@@ -50,10 +50,10 @@
                                     {{ $person->date_birth }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                    <a href="{{ route('people.edit', $person) }}" class="text-indigo-600 hover:text-indigo-900">
+                                    <a href="{{ route('client.edit', $person) }}" class="text-indigo-600 hover:text-indigo-900">
                                         Editar
                                     </a>
-                                    <a href="{{ route('people.show', $person->id) }}" class="text-indigo-600 hover:text-indigo-900 ml-4">
+                                    <a href="{{ route('client.show', $person->id) }}" class="text-indigo-600 hover:text-indigo-900 ml-4">
                                         Detalhes
                                     </a>
                                 </td>

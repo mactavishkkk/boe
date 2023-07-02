@@ -3,7 +3,7 @@
         <x-error-list />
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 bg-white border-b border-gray-200">
-                <form action="{{ route('people.store') }}" method="POST">
+                <form action="{{ route('client.store') }}" method="POST">
                     @csrf
 
                     <div class="flex">
@@ -64,7 +64,7 @@
 
                     <div>
                         <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Cadastrar</button>
-                        <a href="{{ route('people.index') }}" class="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">Voltar</a>
+                        <a href="{{ route('client.index') }}" class="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded">Voltar</a>
                     </div>
                 </form>
             </div>

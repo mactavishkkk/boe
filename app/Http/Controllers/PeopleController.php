@@ -58,7 +58,7 @@ class PeopleController extends Controller
             'date_birth' => $data['date_birth'],
         ]);
 
-        return redirect()->route('people.index');
+        return redirect()->route('client.index');
     }
 
     /**
@@ -86,7 +86,7 @@ class PeopleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, People $people)
+    public function update(Request $request, People $client)
     {
 
         $personValidatedData = $request->validate([
@@ -107,10 +107,10 @@ class PeopleController extends Controller
             'complement' => 'nullable',
         ]);
 
-        $people->update($personValidatedData);
-        $people->address()->update($addressValidatedData);
+        $client->update($personValidatedData);
+        $client->address()->update($addressValidatedData);
 
-        return redirect()->route('people.index');
+        return redirect()->route('client.index');
     }
 
     /**
