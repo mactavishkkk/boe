@@ -18,7 +18,7 @@ Certifique-se de possuir o PHP >= 8.1, nodejs(npm) e o driver de um banco de dad
 git clone https://github.com/mactavishkkk/boe.git
 ```
 
-2. Instale todas as dependências
+2. Entre na raiz do projeto `cd boe` e instale todas as dependências
 
 ```bash
 composer install
@@ -81,3 +81,10 @@ Obs: Você também pode abrir um terminal dentro do container, para evitar esse 
 - Laravel: "^10.10"
 - PHP: "^8.1"
 - Docker Desktop: "^4.21"
+
+## Diagramas
+
+-- Diagrama - Visão Arquitetural da Infraestrutura: --
+
+-- Diagrama - Design da Solução: --
+

@@ -25,4 +25,9 @@ class People extends Model
     {
         return $this->hasOne(Address::class, 'id', 'address_id');
     }
+
+    public function maritalStatus()
+    {
+        return $this->hasOne(MaritalStatus::class, 'id', 'marital_status_id');
+    }
 }

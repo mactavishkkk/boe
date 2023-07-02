@@ -20,4 +20,9 @@ class Address extends Model
         'district',
         'complement'
     ];
+
+    public function people()
+    {
+        return $this->belongsTo(People::class, 'address_id', 'id');
+    }
 }

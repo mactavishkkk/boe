@@ -35,25 +35,25 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
-                            @foreach ($peoples as $peoples)
+                            @foreach ($people as $person)
                             <tr>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    {{ $peoples->id }}
+                                    {{ $person->id }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    {{ $peoples->name }}
+                                    {{ $person->name }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    {{ $peoples->email }}
+                                    {{ $person->email }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    {{ $peoples->date_birth }}
+                                    {{ $person->date_birth }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                                    <a href="{{ route('people.edit', $peoples->id) }}" class="text-indigo-600 hover:text-indigo-900">
+                                    <a href="{{ route('people.edit', $person) }}" class="text-indigo-600 hover:text-indigo-900">
                                         Editar
                                     </a>
-                                    <a href="{{ route('people.show', $peoples->id) }}" class="text-indigo-600 hover:text-indigo-900 ml-4">
+                                    <a href="{{ route('people.show', $person->id) }}" class="text-indigo-600 hover:text-indigo-900 ml-4">
                                         Detalhes
                                     </a>
                                 </td>
