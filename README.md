@@ -1,12 +1,16 @@
 
+# Sumário
+
+- [BOE](#boe)
+- [Configuração](#configuração)
+- [Stack's](#rodandoprojeto)
+- [Diagrama](#diagrama)
+
 # BOE - Bemol Omnichannel Experience
 
 Um projeto que visa a união das interações de todo o corpo de clientes em uma só experiencia, seja ela iniciada, desenvolvida e finalizada seja em qualquer canal de interação.
 
-
-
-
-## Rodando o projeto
+# Rodando o projeto
 
 #### Nativo
 
@@ -74,17 +78,10 @@ Obs: Caso sua pasta "storage" não venha com as devidas permissão dentro do con
 ```
 
 Obs: Você também pode abrir um terminal dentro do container, para evitar esse repetitivo "./vendor/bin/sail {comand}" dessa forma: `docker exec -it container.id' bash` descubra o id do container com `docker ps`
-## Stack's utilizada
+# Stack's utilizada
 
 - Blade/breeze: "^1.21"
 - Tailwind: "^3.1"
 - Laravel: "^10.10"
 - PHP: "^8.1"
 - Docker Desktop: "^4.21"
-
-## Diagramas
-
--- Diagrama - Visão Arquitetural da Infraestrutura: --
-
--- Diagrama - Design da Solução: --
-
