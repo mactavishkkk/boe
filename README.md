@@ -1,14 +1,16 @@
 
 # Sumário
 
-- [BOE](#boe)
-- [Configuração](#configuração)
-- [Stack's](#rodandoprojeto)
+- [BOE](#-boe---bemol-omnichannel-experience)
+- [Rodando o projeto](#rodando-o-projeto)
+- [Stack's](#stack's-utilizadas)
 - [Diagrama](#diagrama)
-
 # BOE - Bemol Omnichannel Experience
 
 Um projeto que visa a união das interações de todo o corpo de clientes em uma só experiencia, seja ela iniciada, desenvolvida e finalizada seja em qualquer canal de interação.
+
+
+
 
 # Rodando o projeto
 
@@ -78,7 +80,7 @@ Obs: Caso sua pasta "storage" não venha com as devidas permissão dentro do con
 ```
 
 Obs: Você também pode abrir um terminal dentro do container, para evitar esse repetitivo "./vendor/bin/sail {comand}" dessa forma: `docker exec -it container.id' bash` descubra o id do container com `docker ps`
-# Stack's utilizada
+# Stack's utilizadas
 
 - Blade/breeze: "^1.21"
 - Tailwind: "^3.1"
